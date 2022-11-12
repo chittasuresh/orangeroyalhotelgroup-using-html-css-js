@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive hotel booking website</title>
+
+   <!--================================= swiperjs ===================================-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <!--============================== font awesome cdn link  =======================-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!--============================= css file link  =====================================-->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--================= header section starts  ===========================-->
+<section class="header">
+   <div class="flex">
+      <a href="#home" class="logo">Orange Royal group Hotels&Resorts</a>
+      <a href="#availability" class="btn">check availability</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#reviews">Reviews</a>
+   </nav>
+
+</section>
+<!--===================== home section starts  ======================-->
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpg" alt="">
+            <div class="flex">
+               <h3>luxurious rooms</h3>
+               <a href="#availability" class="btn">check availability</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="">
+            <div class="flex">
+               <h3>foods and drinks</h3>
+               <a href="#reservation" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-3.jpg" alt="">
+            <div class="flex">
+               <h3>luxurious halls</h3>
+               <a href="#contact" class="btn">contact us</a>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+   </div>
+</section>
+<!--=================== availability section starts  ========================-->
+<section class="availability" id="availability">
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+</section>
+<!--======================= ABOUT SECTION STARTS ===============================-->
+
+<section class="about" id="about">
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-1.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Best staff&Orange royal pod hotel</h3>
+         <p>Located in prime Indiranagar area, within CBD and right adjacent to KGA Golf Course is orange royal hotels group. The 5-star hotel offers 195 rooms and suites with views of the golf course. One of the only hotels in the city to have a rooftop temperature-controlled swimming pool, orange royal pod hotel houses three luxury banquet halls and a beautiful lawn which can host 2000 guests.</p>
+         <a href="#reservation" class="btn">make a reservation</a>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+   </div>
+   <div class="row revers">
+      <div class="image">
+         <img src="images/about-img-2.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Best foods</h3>
+         <p>Tiger trail our specialty Indian restaurant serves authentic cuisines from the north west frontiers. Witness the live cooking counters of traditional Indian dishes in a gazebo setting. Providing a variety of sizzling kebabs and grills, it takes you on a delightful culinary journey.</p>
+         <a href="#contact" class="btn">contact us</a>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+   </div>
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-3.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Swimming Pool</h3>
+         <p>Have a refreshing experience in our heated swimming pool while sipping cool beverages. You won’t be able to resist taking a dive after a hectic day.</p>
+         <a href="#availability" class="btn">check availability</a>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+   </div>
+</section>
+<!--====================== SERVICES SECTION STARTS  =========================-->
+<section class="services">
+   <div class="box-container">
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>food & drinks</h3>
+         <p>Limelight, our all-day diner serving scrumptious buffet and ala-carte, is set against lush green lawns with alfresco and indoor seating options. The colorful, trendy decor and natural light of this place creates a pleasant ambiance to enjoy our signature artisan Thin Crust Wood Fire Pizza.coffee ,fruit salad.</p>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>outdoor dining</h3>
+         <p>One of the prettiest microbreweries in town, orange royal pod hotel has knocked us off of our feet with the lavish space, poolside dining experience, and their scrumptious fare of food and drinks. It looks especially stunning in the evenings when it’s all lit up. Score a table by the poolside, sip on some..</p>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+
+      <!-- <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>Beach view</h3>
+         <p></p>
+      </div> -->
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>Decorations</h3>
+         <p>keep your loved one of your family memeber on the edge of their seat when it comes to surprising your family memeber! An orange royal pod hotel made with a lot of makes for ana mazing surprise! As soon as you step inside the room, you will be stunned by the gleaming balloons around. Your visit will be enhanced..</p>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>Swimming Pool</h3>
+         <p>Have a refreshing experience in our heated swimming pool while sipping cool beverages. You won’t be able to resist taking a dive after a hectic day. </p>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>Resort Beach</h3>
+         <p>provides an excellent view of the clear emerald waters and coconut trees studded beach. Its well-appointed suites with modern amenities, warm and welcoming staff ensure that guests are comfortable and cared for. With well trained staff manning the kids play zone, couples</p>
+         <input type="submit" value="Read more...." name="check" class="btn">
+      </div>
+   </div>
+</section>
+<!--======================== RESERVATION SECTION STARTS =============================-->
+<section class="reservation" id="reservation">
+   <form action="" method="post">
+      <h3>Make Reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+</section>
+<!--======================= GALLERY SECTION STARTS  ==========================-->
+<section class="gallery" id="gallery">
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+         <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-6.webp" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+</section>
+<!--======================== contact section starts  =========================-->
+<section class="contact" id="contact">
+   <div class="row">
+      <form action="" method="post">
+         <h3>send us message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="enter your number" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+      <div class="faq">
+         <h3 class="title">frequently asked questions</h3>
+         <div class="box active">
+            <h3>how to cancel?</h3>
+            <p>There is option in orangeroyalhotelsgroup website .please go through</p>
+         </div>
+         <div class="box">
+            <h3>is there any vacancy?</h3>
+            <p>once trying to reservation there only you will get information</p>
+         </div>
+         <div class="box">
+            <h3>what are payment methods?</h3>
+            <p>credit card, debit card, cash and now more and more, mobile payments like Apple Pay, Samsung Pay and Google Pay</p>
+         </div>
+         <div class="box">
+            <h3>how to claim coupons codes?</h3>
+            <p>When you visit a merchant, you can redeem your coupon by providing the cashier with your coupon code at checkout. When you redeem a coupon, your card statement may initially show a pending charge for the full transaction amount.</p>
+         </div>
+         <div class="box">
+            <h3>what are the age requirements?</h3>
+            <p>The primary guest must be at least 18 years of age to be able to check into the hotel. It is mandatory for guests to present a valid photo identification document at the time of check-in. Guests under the age of 18 must be accompanied by an adult. The Hotel reserves the right to check photo identification.</p>
+         </div>
+      </div>
+   </div>
+</section>
+<!--========================== REVIEW SECTION STARTS  ========================-->
+<section class="reviews" id="reviews">
+   <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="images/g1.png" alt="">
+            <h3>Jatin acharya</h3>
+            <p>The buffet dinner was simple, tasty and easy on the stomach with just the right amount of spices. Loved the Tuna Salad.
+            Pramod Kumar was extremely polite and his service exceptional.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/g2.jpg" alt="">
+            <h3>Srikanth</h3>
+            <p>I had a great time at the hotel. The food is delicious. Love the quality. And the service is very prompt. One name that comes to mind is Mr. Shakir and Mr. Pramod Kumar. Their serivce is flawless! They do take care of every need.
+            The ambience is very lively! Kudos to the team.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/g3.jpeg" alt="">
+            <h3>Elvire</h3>
+            <p>I stayed here a couple of times during business trips to Bangalore from Australia. Very courteous staff, non-smoking hotel, well furnished rooms and wholesome breakfast. The view from the room facing the lawn and golf course is beautiful.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/g4.png" alt="">
+            <h3>Revathi sharma</h3>
+            <p>Awesome Experience. Room was spacious with all the basis amenities for stay. Staff was so courteous. During my 10days stay, I have even no complaints about rudeness or any silly mistakes from staff.
+            Food was good but can give 7/10 and maybe the reason is my North Indian taste buds.
+            Ample space for parking and two exits are there which were also helped me by saving my time many times.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/g5.png" alt="">
+            <h3>Ashwini iyer</h3>
+            <p>I was here for the Monsoon brunch and my experience was amazing.
+            The staff were so friendly and energetic until the end. They always had a smile on their face while greeting.
+            Coming to the food they had variety of dishes I loved what ever was severed. Especially the desserts were amazing. They have miniature cocktails and if you are planning to visit don't forget to opt for the brunch.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/g6.png" alt="">
+            <h3>Kavita Bharadwaj</h3>
+            <p>Rooms are good and clean. Food is awesome in room service, 5 star. Room service menu is better than actual restaurant menus. Order any fish, pasta...awesome. breakfast taste is awesome. Menu is limited than other hotels but is better quality.
+            Service is good and they are quite polite.
+            Place looks clean all around.</p>
+         </div>
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+</section>
+<!--========================== footer section starts  =========================-->
+<section class="footer">
+   <div class="footer-sg">
+      <h2>Orange Royal Hotel Group</h2>
+   </div>
+   <div class="box-container">
+      <div class="box">
+         <a href="tel:080-41783000"><i class="fas fa-phone"></i>080-41783000</a>
+         <a href="tel:080-26784201"><i class="fas fa-phone"></i>080-26784201</a>
+         <a href="mailto:orangeroyalhotelsgroup@gmail.com"><i class="fas fa-envelope"></i>orangeroyalhotelsgroup@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i>Benguluru-560058,Karnataka,India</a>
+      </div>
+      <div class="box">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#reservation">Reservation</a>
+         <a href="#gallery">Gallery</a>
+         <a href="#contact">Contact</a>
+         <a href="#reviews">Reviews</a>
+      </div>
+      <div class="box">
+         <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">Linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+      
+   </div>
+   <div class="credit">&copy; copyright 2022 by Orange Royal pod Hotels | All Rights Reserved!</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
